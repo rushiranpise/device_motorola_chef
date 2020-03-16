@@ -14,15 +14,18 @@
 # limitations under the License.
 #
 
-# Inherit some common Lineage stuff.
+# Inherit some common Aosp stuff.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Device
 $(call inherit-product, device/motorola/chef/device.mk)
+
+# Inherit some common PixelExperience stuff.
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # A/B updater
 AB_OTA_POSTINSTALL_CONFIG += \
@@ -53,14 +56,10 @@ TARGET_RECOVERY_FSTAB := device/motorola/sdm660-common/rootdir/etc/fstab.qcom
 
 # Device identifiers
 PRODUCT_DEVICE := chef
-PRODUCT_NAME := lineage_chef
+PRODUCT_NAME := aosp_chef
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := motorola one power
 PRODUCT_MANUFACTURER := motorola
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=chef \
-    PRIVATE_BUILD_DESC="chef_sprout-user 10 QPTS30.61-18-16-16 c8402 release-keys"
-
-# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := motorola/chef_retail/chef_sprout:10/QPTS30.61-18-16-16/c8402:user/release-keys
+    PRODUCT_NAME=chef
