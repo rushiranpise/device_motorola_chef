@@ -2,26 +2,14 @@
   {
     "remote":     "github",
     "repository": "LineageOS/android_kernel_motorola_msm8998",
-   "target_path": "kernel/motorola/msm8998",
-   "branch":      "lineage-17.1"
-  },
-  {
-    "remote":      "github",
-    "repository":  "Hasaber8/proprietary_vendor_motorola-1",
-    "target_path": "vendor/motorola",
+    "target_path": "kernel/motorola/msm8998",
     "branch":      "lineage-17.1"
   },
   {
-    "remote":      "github",
-    "repository":  "LineageOS/android_external_bson",
-    "target_path": "external/bson",
-    "branch":      "lineage-17.1"
-  },
-  {
-    "remote":      "github",
-    "repository":  "LineageOS/android_system_qcom",
-    "target_path": "system/qcom",
-    "branch":      "lineage-17.1"
+    "repository"  : "vendor_motorola_chef",
+    "target_path" : "vendor/motorola/chef",
+    "branch"      : "ten",
+    "remote"      : "pixel-devices-bitbucket"
   },
   {
     "remote":      "github",
