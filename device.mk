@@ -54,6 +54,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.chef.rc
 
+PRODUCT_COPY_FILES += \
+    device/motorola/sdm660-common/rootdir/etc/rdp_fstab.qcom:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.qcom \
+    device/motorola/sdm660-common/rootdir/etc/rdp_fstab.qcom:$(TARGET_COPY_OUT_RECOVERY)/root/first_stage_ramdisk/fstab.qcom
+    
 # Sensors
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf \
