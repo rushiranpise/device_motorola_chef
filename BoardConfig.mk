@@ -49,5 +49,8 @@ BOARD_SUPER_PARTITION_VENDOR_DEVICE_SIZE := 536870912
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
+# SELinux
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
 # inherit from the proprietary version
 -include vendor/motorola/chef/BoardConfigVendor.mk
