@@ -5,7 +5,15 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
+function blob_fixup() {
+    case "${1}" in
+        # Fix camera recording
+        vendor/lib/libmmcamera2_pproc_modules.so)
+            sed -i "s/ro.product.manufacturer/ro.product.nopefacturer/" "${2}"
+            ;;
 
+   esac
+}
 # If we're being sourced by the common script that we called,
 # stop right here. No need to go down the rabbit hole.
 if [ "${BASH_SOURCE[0]}" != "${0}" ]; then
