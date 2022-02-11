@@ -22,4 +22,7 @@
 <resources>
     <!-- StatusBar burn-in protection -->
     <bool name="config_statusBarBurnInProtection">true</bool>
+    <integer name="config_maxVisibleNotificationIcons">6</integer>
+    <integer name="config_maxVisibleNotificationIconsOnLock">6</integer>
+    <integer name="config_maxVisibleStatusIconContainer">7</integer>     
 </resources>
