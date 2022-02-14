@@ -1,10 +1,10 @@
-# Audio - ACDB
-vendor/etc/acdbdata/Bluetooth_cal.acdb|de32f236e41af911ffaa7a52018eb5e1556936c1
+# Audio ACDB
+vendor/etc/acdbdata/Bluetooth_cal.acdb
 vendor/etc/acdbdata/General_cal.acdb
 vendor/etc/acdbdata/Global_cal.acdb
-vendor/etc/acdbdata/Handset_cal.acdb|87df3deddcf8a044b1dbc30544739a1ff1609cad
+vendor/etc/acdbdata/Handset_cal.acdb
 vendor/etc/acdbdata/Hdmi_cal.acdb
-vendor/etc/acdbdata/Headset_cal.acdb|e80ccc45897a0886ca25d3562c09efd052d44381
+vendor/etc/acdbdata/Headset_cal.acdb
 vendor/etc/acdbdata/Speaker_cal.acdb
 
 # Audio - Prebuilt
@@ -14,13 +14,18 @@ vendor/lib/libmotaudioutils.so
 vendor/lib/libsensorndkbridge.so
 vendor/lib/libtinycompress_vendor.so
 vendor/lib/libunshorten.so
+vendor/lib64/vndk/libtinyalsa.so
+vendor/lib64/libsensorndkbridge.so
+vendor/lib64/libtinycompress.so
 
 # Audio - Soundfx
 vendor/lib/soundfx/libmmieffectswrapper.so
 vendor/lib/soundfx/libspeakerbundle.so
-
 # Camera
 vendor/lib/hw/libSonyDefocus.so
+vendor/etc/camera/ov5675_qtech_chromatix.xml
+vendor/etc/camera/ov12a10_qtech_chromatix.xml
+vendor/etc/camera/ov16b10_qtech_chromatix.xml
 vendor/lib/hw/camera.sdm660.so
 vendor/lib/libhal_dbg.so
 vendor/lib/libseemore.so
@@ -136,10 +141,6 @@ vendor/lib/libchromatix_ov5675_qtech_zsl_preview.so
 vendor/lib/libchromatix_ov5675_qtech_zsl_video.so
 
 # Camera - mmcamera
-system/lib/libmmcamera_faceproc.so
-system/lib/libmmcamera_faceproc2.so
-system/lib64/libmmcamera_faceproc.so
-system/lib64/libmmcamera_faceproc2.so
 vendor/lib/libmmcamera2_c2d_module.so
 vendor/lib/libmmcamera2_cpp_module.so
 vendor/lib/libmmcamera2_frame_algorithm.so
@@ -293,13 +294,13 @@ vendor/lib64/libssd.so
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets.rc
+vendor/etc/init/init.ets.rc
 vendor/lib64/vendor.egistec.hardware.fingerprint@2.0.so
 vendor/lib/vendor.egistec.hardware.fingerprint@2.0.so
 vendor/lib64/libets_fp_et5.so
 vendor/lib64/libets_teeclient.so
 vendor/lib/libets_fp_et5.so
 vendor/lib/libets_teeclient.so
-vendor/etc/init/init.ets.rc
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
@@ -330,13 +331,17 @@ vendor/lib64/vendor.dolby.hardware.dms@1.0.so
 -product/priv-app/ims/ims.apk|54c9f8f49d567082f7d23cee40a54515162dbf90
 
 # Keymaster
+vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
+vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
 vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc
 vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so
 vendor/lib/libkeymasterdeviceutils.so
 vendor/lib/libkeymasterprovision.so
 vendor/lib/libkeymasterutils.so
+vendor/lib/libqtikeymaster4.so
 vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so
 vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
+vendor/lib64/libqtikeymaster4.so
