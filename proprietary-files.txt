@@ -141,6 +141,10 @@ vendor/lib/libchromatix_ov5675_qtech_zsl_preview.so
 vendor/lib/libchromatix_ov5675_qtech_zsl_video.so
 
 # Camera - mmcamera
+system/lib/libmmcamera_faceproc.so
+system/lib/libmmcamera_faceproc2.so
+system/lib64/libmmcamera_faceproc.so
+system/lib64/libmmcamera_faceproc2.so
 vendor/lib/libmmcamera2_c2d_module.so
 vendor/lib/libmmcamera2_cpp_module.so
 vendor/lib/libmmcamera2_frame_algorithm.so
@@ -285,6 +289,7 @@ vendor/lib64/libdrmfs.so
 vendor/lib64/libdrmtime.so
 vendor/lib64/libGPreqcancel_svc.so
 vendor/lib64/libGPreqcancel.so
+vendor/lib64/liboemcrypto.so
 vendor/lib64/libqisl.so
 vendor/lib64/libQSEEComAPI.so
 vendor/lib64/librpmb.so
