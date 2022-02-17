@@ -26,6 +26,10 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 PRODUCT_PACKAGES += \
     NoCutoutOverlay
 
+# Soong - HALs
+PRODUCT_BOARD_PLATFORM := sdm660
+PRODUCT_USES_QCOM_HARDWARE := true
+
 # Charger images
 PRODUCT_PACKAGES += \
     charger_res_images \
