@@ -26,7 +26,11 @@ $(call inherit-product, device/motorola/chef/device.mk)
 # Inherit some common PixelExperience stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+TARGET_INCLUDE_STOCK_ARCORE := false
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # A/B updater
@@ -49,6 +53,19 @@ PRODUCT_PACKAGES += \
     update_engine_sideload \
     update_verifier
 
+# Enable retrofit dynamic partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
+
+PRODUCT_PACKAGES += \
+    check_dynamic_partitions
+
+AB_OTA_POSTINSTALL_CONFIG += \
+    RUN_POSTINSTALL_product=true \
+    POSTINSTALL_PATH_product=bin/check_dynamic_partitions \
+    FILESYSTEM_TYPE_product=ext4 \
+    POSTINSTALL_OPTIONAL_product=false
+    
 # The following modules are included in debuggable builds only.
 PRODUCT_PACKAGES_DEBUG += \
     bootctl \
@@ -73,8 +90,3 @@ PRODUCT_RELEASE_NAME := chef
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=chef
-
-PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="chef_sprout-user 10 QPTS30.61-18-12 65302 release-keys"
-
-# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := motorola/chef_retail/chef_sprout:10/QPTS30.61-18-12/65302:user/release-keys
