@@ -31,7 +31,8 @@ TARGET_INCLUDE_STOCK_ARCORE := false
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/proton/build/product.mk)
+$(call inherit-product, vendor/gapps/common/Android.mk)
 
 # A/B updater
 AB_OTA_UPDATER := true
