@@ -32,6 +32,9 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 # Quick Tap
 TARGET_SUPPORTS_QUICK_TAP := true
 
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 # A/B updater
 AB_OTA_UPDATER := true
 
