@@ -29,6 +29,9 @@ TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
+# Quick Tap
+TARGET_SUPPORTS_QUICK_TAP := true
+
 # A/B updater
 AB_OTA_UPDATER := true
 
