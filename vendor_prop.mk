@@ -14,7 +14,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.latch_unsignaled=1
+    debug.sf.latch_unsignaled=1 \
+    debug.hwui.use_buffer_age=false
 
 # fastbootd
 PRODUCT_PROPERTY_OVERRIDES += \
