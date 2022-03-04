@@ -14,7 +14,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=480 \
     debug.sf.latch_unsignaled=1
 
 # fastbootd
