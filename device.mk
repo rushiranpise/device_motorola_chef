@@ -24,7 +24,8 @@ $(call inherit-product-if-exists, vendor/motorola/chef/chef-vendor.mk)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 PRODUCT_PACKAGES += \
-    NoCutoutOverlay
+    NoCutoutOverlay \
+    NotchBarKiller
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
