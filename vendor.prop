@@ -10,8 +10,6 @@ persist.vendor.audio.calfile3=/vendor/etc/acdbdata/Handset_cal.acdb
 persist.vendor.audio.calfile4=/vendor/etc/acdbdata/Hdmi_cal.acdb
 persist.vendor.audio.calfile5=/vendor/etc/acdbdata/Headset_cal.acdb
 persist.vendor.audio.calfile6=/vendor/etc/acdbdata/Speaker_cal.acdb
-vendor.voice.path.for.pcm.voip=true
-use.voice.path.for.pcm.voip=true
 
 # Fluence
 persist.vendor.audio.dualmic.config=endfire
@@ -23,7 +21,6 @@ persist.vendor.audio.fluence.voicerec=true
 ro.vendor.audio.sdk.fluencetype=none
 
 # Display
-debug.sf.latch_unsignaled=1
 debug.hwui.use_buffer_age=false
 
 # fastbootd
