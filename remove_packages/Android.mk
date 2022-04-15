@@ -11,6 +11,7 @@ LOCAL_OVERRIDES_PACKAGES := \
     Chrome-Stub \
     Drive \
     GoogleCamera \
+    GoogleCameraGo \
     GoogleContacts \
     GoogleTTS \
     Maps \
