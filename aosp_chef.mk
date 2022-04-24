@@ -23,13 +23,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Device
 $(call inherit-product, device/motorola/chef/device.mk)
 
-# Inherit some common PixelExperience stuff.
+# Inherit some common AEX stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_SUPPORTS_GOOGLE_RECORDER := false
 TARGET_INCLUDE_STOCK_ARCORE := false
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/common.mk)
 
 # Quick Tap
 TARGET_SUPPORTS_QUICK_TAP := true
