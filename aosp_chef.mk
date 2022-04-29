@@ -31,6 +31,9 @@ TARGET_SUPPORTS_GOOGLE_RECORDER := false
 TARGET_INCLUDE_STOCK_ARCORE := false
 $(call inherit-product, vendor/aosp/common.mk)
 
+# Gapps
+WITH_GAPPS := true
+
 # Quick Tap
 TARGET_SUPPORTS_QUICK_TAP := true
 
