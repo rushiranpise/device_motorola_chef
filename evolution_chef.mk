@@ -80,7 +80,7 @@ TARGET_RECOVERY_FSTAB := device/motorola/sdm660-common/rootdir/etc/fstab.qcom
 
 # Device identifiers
 PRODUCT_DEVICE := chef
-PRODUCT_NAME := aosp_chef
+PRODUCT_NAME := evolution_chef
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := One Power
 PRODUCT_MANUFACTURER := Motorola
