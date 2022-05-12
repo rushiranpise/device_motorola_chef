@@ -15,10 +15,10 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_chef.mk
+    $(LOCAL_DIR)/dot_chef.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_chef-user \
-    aosp_chef-userdebug \
-    aosp_chef-eng
+    dot_chef-user \
+    dot_chef-userdebug \
+    dot_chef-eng
 
