@@ -49,10 +49,6 @@ TARGET_SCREEN_WIDTH := 1080
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
-
- # Camera
-PRODUCT_PACKAGES += \
-    GoogleCameraGo
     
 # Fingerprint Gestures
 PRODUCT_COPY_FILES += \
