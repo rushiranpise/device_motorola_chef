@@ -5,11 +5,15 @@ LOCAL_MODULE := RemovePackages
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := \
+    Calculator \
     CalculatorGooglePrebuilt \
+    Calendar \
     CalendarGooglePrebuilt \
     Chrome \
     Chrome-Stub \
     Drive \
+    Gallery \
+    Gmail \
     GoogleCamera \
     GoogleContacts \
     GoogleTTS \
@@ -24,6 +28,7 @@ LOCAL_OVERRIDES_PACKAGES := \
     RecorderPrebuilt \
     SafetyHubPrebuilt \
     talkback \
+    Videos \
     WellbeingPrebuilt \
     YouTube \
     YouTubeMusicPrebuilt
