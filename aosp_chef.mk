@@ -96,7 +96,7 @@ WITH_GMS := true
 TARGET_USES_MINI_GAPPS := true
 IS_PHONE := true
 USE_PIXEL_CHARGING := true
-TARGET_USES_BLUR := false
+TARGET_USES_BLUR := true
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.cherish.maintainer=Rushi Ranpise
 
