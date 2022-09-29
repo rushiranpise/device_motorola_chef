@@ -29,7 +29,7 @@ TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_INCLUDE_STOCK_ARCORE := true
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
 # Quick Tap
 TARGET_SUPPORTS_QUICK_TAP := true
@@ -80,7 +80,7 @@ TARGET_RECOVERY_FSTAB := device/motorola/sdm660-common/rootdir/etc/fstab.qcom
 
 # Device identifiers
 PRODUCT_DEVICE := chef
-PRODUCT_NAME := aosp_chef
+PRODUCT_NAME := cherish_chef
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := One Power
 PRODUCT_MANUFACTURER := Motorola
@@ -88,3 +88,17 @@ PRODUCT_RELEASE_NAME := chef
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=chef
+
+# Cherish OS Stuff
+CHERISH_BUILD_TYPE := OFFICIAL
+CHERISH_BUILD_VARIANT := Gapps
+WITH_GMS := true
+TARGET_USES_MINI_GAPPS := true
+IS_PHONE := true
+USE_PIXEL_CHARGING := true
+TARGET_USES_BLUR := false
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.cherish.maintainer=Rushi Ranpise
+
+PRODUCT_GENERIC_PROPERTIES += \
+    ro.cherish.maintainer=Rushi Ranpise
