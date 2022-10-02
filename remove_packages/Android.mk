@@ -6,6 +6,27 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := \
     Calculator \
+    CarrierMetrics \
+    DiagnosticsToolPrebuilt \
+    PrebuiltGoogleAdservicesTvp \
+    PrebuiltGoogleTelemetryTvp \
+    SoundAmplifierPrebuilt \
+    StorageManagerGoogle \
+    CarrierSetup \
+    ConnectivityThermalPowerManager \
+    AmbientStreaming \
+    HelpRtcPrebuilt \
+    ScribePrebuilt \
+    ImsServiceEntitlement \
+    AppDirectedSMSService \
+    BetterBugStub \
+    DCMO \
+    WfcActivation \
+    TetheringEntitlement \
+    DMService \
+    ConnMO \
+    CarrierWifi \
+    CbrsNetworkMonitor \
     CalculatorGooglePrebuilt \
     Calendar \
     CalendarGooglePrebuilt \
