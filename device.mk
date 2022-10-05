@@ -25,9 +25,7 @@ PRODUCT_PACKAGES += \
     NoCutoutOverlay \
     NotchBarKiller
 
-# Remove unwanted packages
-PRODUCT_PACKAGES += \
-    RemovePackages
+
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
