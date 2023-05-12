@@ -78,3 +78,6 @@ $(call inherit-product, build/target/product/verity.mk)
 
 # Inherit from motorola sdm660-common
 $(call inherit-product, device/motorola/sdm660-common/common.mk)
+
+# VNDK
+PRODUCT_SHIPPING_API_LEVEL := 27
