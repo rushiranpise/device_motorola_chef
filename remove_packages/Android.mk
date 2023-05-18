@@ -26,10 +26,8 @@ LOCAL_OVERRIDES_PACKAGES := \
     PrebuiltDeskClockGoogle \
     PrebuiltGmail \
     RecorderPrebuilt \
-    SafetyHubPrebuilt \
     talkback \
     Videos \
-    WellbeingPrebuilt \
     YouTube \
     YouTubeMusicPrebuilt
 
